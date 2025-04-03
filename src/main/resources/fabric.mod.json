@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mamaki",
+	"version": "${version}",
+	"name": "Mamaki Maker",
+	"description": "Adopt your own personal maidmaki!",
+	"authors": [
+		"zToastr"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/ztoastr/mamaki-maker"
+	},
+	"license": "MIT",
+	"icon": "assets/mamaki/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ztoast.mamaki.MamakiMaker"
+		],
+		"fabric-datagen": [
+			"net.ztoast.mamaki.MamakiMakerDataGenerator"
+		],
+		"client": [
+			"net.ztoast.mamaki.MamakiMakerClient"
+		]
+	},
+	"mixins": [
+		"mamaki.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
