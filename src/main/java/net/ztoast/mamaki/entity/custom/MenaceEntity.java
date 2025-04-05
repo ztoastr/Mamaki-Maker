@@ -2,7 +2,6 @@ package net.ztoast.mamaki.entity.custom;
 
 import org.jetbrains.annotations.Nullable;
 
-import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.AnimalMateGoal;
 import net.minecraft.entity.ai.goal.FollowParentGoal;
@@ -25,8 +24,6 @@ import net.ztoast.mamaki.entity.MamakiEntities;
 import net.ztoast.mamaki.item.MamakiItems;
 
 public class MenaceEntity extends TameableEntity{
-    public final AnimationState idleAnimationState = new AnimationState();
-    private int idleAnimationTimeout = 0;
 
     public MenaceEntity(EntityType<? extends TameableEntity> entityType, World world) {
         super(entityType, world);
@@ -49,23 +46,6 @@ public class MenaceEntity extends TameableEntity{
             .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25)
             .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 1)
             .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 20);
-    }
-
-    private void setupAnimationStates() {
-        if (this.idleAnimationTimeout <= 0) {
-            this.idleAnimationTimeout = 40;
-            this.idleAnimationState.start(this.age);
-        } else {
-            --this.idleAnimationTimeout;
-        }
-    }
-
-    @Override
-    public void tick() {
-        super.tick();
-
-        if (this.getWorld().isClient())
-            this.setupAnimationStates();
     }
 
     @Override
