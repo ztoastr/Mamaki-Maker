@@ -15,7 +15,7 @@ public class MenaceRenderer extends BipedEntityRenderer<MenaceEntity, MenaceMode
 
     @Override
     public Identifier getTexture(MenaceEntity entity) {
-        return Identifier.of(MamakiMaker.MOD_ID, "textures/entity/menace/maid.png");
+        return Identifier.of(MamakiMaker.MOD_ID, "textures/entity/menace/menace.png");
     }
 
 }

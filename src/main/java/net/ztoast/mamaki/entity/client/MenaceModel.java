@@ -12,6 +12,6 @@ public class MenaceModel<T extends MenaceEntity> extends PlayerEntityModel<T> {
     }
 
     public static TexturedModelData getTexturedModelData() {
-        return TexturedModelData.of(PlayerEntityModel.getTexturedModelData(new Dilation(1.0f), false), 64, 64);
+        return TexturedModelData.of(PlayerEntityModel.getTexturedModelData(new Dilation(0.0f), true), 64, 64);
     }
 }
