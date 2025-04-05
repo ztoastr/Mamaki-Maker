@@ -1,7 +1,9 @@
 package net.ztoast.mamaki;
 
 import net.fabricmc.api.ModInitializer;
+import net.ztoast.mamaki.block.MamakiBlocks;
 import net.ztoast.mamaki.entity.MamakiEntities;
+import net.ztoast.mamaki.item.MamakiItemGroups;
 import net.ztoast.mamaki.item.MamakiItems;
 
 import org.slf4j.Logger;
@@ -13,7 +15,9 @@ public class MamakiMaker implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		MamakiItemGroups.registerItemGroups();
 		MamakiItems.registerModItems();
+		MamakiBlocks.registerModBlocks();
 		MamakiEntities.registerModEntities();
 	}
 }

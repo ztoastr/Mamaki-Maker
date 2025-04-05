@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:smelting",
+    "category": "misc",
+    "cookingtime": 200,
+    "experience": 0.2,
+    "group": "sweet_potato",
+    "ingredient": {
+        "item": "mamaki:sweet_potato"
+    },
+    "result": {
+        "id": "mamaki:baked_sweet_potato"
+    }
+}

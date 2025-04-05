@@ -1,4 +1,11 @@
 {
+    "itemgroup.mamaki.mamaki_items": "Mamaki Items",
+
     "item.mamaki.kiss": "Kiss",
+    "item.mamaki.sweet_potato": "Sweet Potato",
+    "item.mamaki.baked_sweet_potato": "Baked Sweet Potato",
+
+    "block.mamaki.love_block": "Block of Love",
+
     "entity.mamaki.menace": "Menace"
 }
