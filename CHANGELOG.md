@@ -5,7 +5,7 @@
 - Support for mod biomes with tags
 - Interaction with other mods (I might be too stupid for this one)
 
-## [1.0.0] - 2025-04-XX
+## [1.0.0] - 2025-04-07
 
 ### Added
 - Custom Menace entity
