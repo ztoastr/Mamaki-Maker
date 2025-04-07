@@ -1,24 +1,30 @@
 package net.ztoast.mamaki;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
+import net.ztoast.mamaki.block.MamakiBlocks;
+import net.ztoast.mamaki.entity.MamakiEntities;
+import net.ztoast.mamaki.item.MamakiItemGroups;
+import net.ztoast.mamaki.item.MamakiItems;
+import net.ztoast.mamaki.utill.MamakiLootTableModifiers;
+import net.ztoast.mamaki.world.gen.MamakiEntitySpawns;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class MamakiMaker implements ModInitializer {
 	public static final String MOD_ID = "mamaki";
-
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		MamakiItemGroups.registerItemGroups();
+		MamakiItems.registerModItems();
+		MamakiBlocks.registerModBlocks();
+		MamakiEntities.registerModEntities();
+		MamakiLootTableModifiers.modifyLootTables();
+        MamakiEntitySpawns.addSpawns();
 
-		LOGGER.info("Hello Fabric world!");
+		CompostingChanceRegistry.INSTANCE.add(MamakiItems.SWEET_POTATO, 0.5f);
 	}
 }
