@@ -18,7 +18,7 @@ public class MamakiEntitySpawns {
             BiomeKeys.FLOWER_FOREST,
             BiomeKeys.MEADOW,
             BiomeKeys.SUNFLOWER_PLAINS
-        ), SpawnGroup.CREATURE, MamakiEntities.MENACE, 1, 1, 1);
+        ), SpawnGroup.CREATURE, MamakiEntities.MENACE, 5, 1, 1);
 
         SpawnRestriction.register(MamakiEntities.MENACE, SpawnLocationTypes.ON_GROUND,
             Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn);
