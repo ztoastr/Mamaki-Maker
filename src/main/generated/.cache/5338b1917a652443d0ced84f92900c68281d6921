@@ -1,0 +1,12 @@
+// 1.21.1	2025-04-06T20:09:28.3165605	Mamaki Maker/Model Definitions
+7347798e282fe7cae2ab0b3a1eae41b467051cb3 assets\mamaki\models\item\sweet_potato.json
+7f89da5a08c185faf59048ef5160251034882ebe assets\mamaki\models\block\love_block.json
+5a12a069d5bf43c0f76b2e84003b7ae2846c189b assets\mamaki\models\block\sweet_potato_crop_stage0.json
+d232bcfdeb27daaf1cfdb3a7092aa15b2b7734b2 assets\mamaki\models\block\sweet_potato_crop_stage1.json
+3e0bb476506fd0551645e22b9412d720c82b8f8b assets\mamaki\models\block\sweet_potato_crop_stage2.json
+9357521707c4d16a6f2cc7f6d9a7d854902cc601 assets\mamaki\models\item\baked_sweet_potato.json
+e6dc9da52351306432413596acb79ffb07e7e9f8 assets\mamaki\models\item\kiss.json
+805673ff640550135fe2b559dec18a260106add0 assets\mamaki\models\item\love_block.json
+1ccffb2f1975bf54dd0b08fa51e83473d7a24c87 assets\mamaki\blockstates\love_block.json
+14be78e2866eaae5f2252ff72aea1b40f0c55002 assets\mamaki\models\block\sweet_potato_crop_stage3.json
+c98a64757232ad45640efacbd33663069db33390 assets\mamaki\blockstates\sweet_potato_crop.json

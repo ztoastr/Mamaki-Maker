@@ -3,6 +3,7 @@ package net.ztoast.mamaki.item;
 import java.util.List;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
@@ -12,11 +13,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.ztoast.mamaki.MamakiMaker;
+import net.ztoast.mamaki.block.MamakiBlocks;
 
 public class MamakiItems {
     public static final Item KISS = registerItem("kiss", new Item(new Item.Settings()));
     public static final Item SWEET_POTATO = registerItem("sweet_potato", 
-        new Item(new Item.Settings().food(MamakiFoodComponents.SWEET_POTATO)) {
+        new AliasedBlockItem(MamakiBlocks.SWEET_POTATO_CROP, new Item.Settings().food(MamakiFoodComponents.SWEET_POTATO)) {
             @Override
             public void appendTooltip(ItemStack stack, TooltipContext ctx, List<Text> tooltip, TooltipType type) {
                 tooltip.add(Text.translatable("tooltip.mamaki.sweet_potato"));
