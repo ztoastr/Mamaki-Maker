@@ -18,15 +18,12 @@ public class MamakiModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(MamakiBlocks.LOVE_BLOCK);
-
         blockStateModelGenerator.registerCrop(MamakiBlocks.SWEET_POTATO_CROP, SweetPotatoCropBlock.AGE, 0, 0, 1, 1, 1, 2, 2, 3);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(MamakiItems.KISS, Models.GENERATED);
-        
-        //itemModelGenerator.register(MamakiItems.SWEET_POTATO, Models.GENERATED);
         itemModelGenerator.register(MamakiItems.BAKED_SWEET_POTATO, Models.GENERATED);
     }
     

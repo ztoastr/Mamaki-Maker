@@ -36,6 +36,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.DamageTypeTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -189,4 +190,18 @@ public class MenaceEntity extends TameableEntity{
         return child;
     }
     
+    @Override
+    public boolean canPickupItem(ItemStack stack) {
+        return stack.isIn(ItemTags.FLOWERS); // I just think it would be cute if she picked flowers
+    }
+    
+    @Override
+    public boolean canGather(ItemStack stack) {
+        return this.canPickupItem(stack);
+    }
+
+    @Override
+    public boolean canPickUpLoot() {
+        return true;
+    }
 }

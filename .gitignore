@@ -92,3 +92,4 @@ gradle-app.setting
 
 ### Fabric ###
 run/
+**/.cache/

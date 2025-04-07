@@ -7,6 +7,7 @@ import net.ztoast.mamaki.entity.MamakiEntities;
 import net.ztoast.mamaki.item.MamakiItemGroups;
 import net.ztoast.mamaki.item.MamakiItems;
 import net.ztoast.mamaki.utill.MamakiLootTableModifiers;
+import net.ztoast.mamaki.world.gen.MamakiEntitySpawns;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,6 +23,7 @@ public class MamakiMaker implements ModInitializer {
 		MamakiBlocks.registerModBlocks();
 		MamakiEntities.registerModEntities();
 		MamakiLootTableModifiers.modifyLootTables();
+        MamakiEntitySpawns.addSpawns();
 
 		CompostingChanceRegistry.INSTANCE.add(MamakiItems.SWEET_POTATO, 0.5f);
 	}
