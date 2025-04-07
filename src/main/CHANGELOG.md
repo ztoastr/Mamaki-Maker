@@ -2,6 +2,8 @@
 - Add sounds
 - Ability to give her equipment
 - Variant skins
+- Support for mod biomes with tags
+- Interaction with other mods (I might be too stupid for this one)
 
 ## [1.0.0] - 2025-04-XX
 
