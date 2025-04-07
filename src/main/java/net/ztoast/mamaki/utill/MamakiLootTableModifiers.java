@@ -13,10 +13,11 @@ import net.ztoast.mamaki.item.MamakiItems;
 
 public class MamakiLootTableModifiers {
     private static final Identifier GRASS_BLOCK_ID = Identifier.of("minecraft", "blocks/short_grass");
+    private static final Identifier TALL_GRASS_BLOCK_ID = Identifier.of("minecraft", "blocks/tall_grass");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((key, tablebuilder, source, registry) -> {
-            if (GRASS_BLOCK_ID.equals(key.getValue())) {
+            if (GRASS_BLOCK_ID.equals(key.getValue()) || TALL_GRASS_BLOCK_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                     .rolls(ConstantLootNumberProvider.create(1))
                     .conditionally(RandomChanceLootCondition.builder(0.02f))
